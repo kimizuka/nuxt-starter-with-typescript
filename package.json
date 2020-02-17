@@ -5,20 +5,22 @@
   "author": "kimizuka",
   "private": true,
   "scripts": {
+    "update": "ncu -u",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.10.2"
+    "nuxt": "^2.11.0"
   },
   "devDependencies": {
-    "@nuxt/types": "^0.3.4",
-    "@nuxt/typescript-build": "^0.3.4",
+    "@nuxt/types": "^0.6.1",
+    "@nuxt/typescript-build": "^0.5.6",
     "@nuxtjs/style-resources": "^1.0.0",
-    "node-sass": "^4.13.0",
-    "nuxt-property-decorator": "^2.5.0",
-    "sass-loader": "^8.0.0"
+    "node-sass": "^4.13.1",
+    "npm-check-updates": "^4.0.1",
+    "nuxt-property-decorator": "^2.5.1",
+    "sass-loader": "^8.0.2"
   }
 }
