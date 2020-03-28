@@ -5,16 +5,23 @@ export default {
   mode: 'spa',
 
   server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, './https/server.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, './https/server.crt'))
-    },
+    // https: {
+    //   key: fs.readFileSync(path.resolve(__dirname, './https/server.key')),
+    //   cert: fs.readFileSync(path.resolve(__dirname, './https/server.crt'))
+    // },
     port: 3000,
     host: '0.0.0.0'
   },
 
   router: {
-    mode: "hash"
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: '404',
+        path: '*',
+        component: resolve(__dirname, 'pages/404.vue')
+      })
+    },
+    // mode: "hash"
   },
 
   /*
