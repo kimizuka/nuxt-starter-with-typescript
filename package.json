@@ -12,14 +12,14 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.12.1"
   },
   "devDependencies": {
-    "@nuxt/types": "^0.6.1",
-    "@nuxt/typescript-build": "^0.5.6",
+    "@nuxt/types": "^0.7.0",
+    "@nuxt/typescript-build": "^0.6.1",
     "@nuxtjs/style-resources": "^1.0.0",
     "node-sass": "^4.13.1",
-    "npm-check-updates": "^4.0.1",
+    "npm-check-updates": "^4.1.0",
     "nuxt-property-decorator": "^2.5.1",
     "sass-loader": "^8.0.2"
   }
